@@ -30,7 +30,7 @@ export class GiftsController {
     try {
       console.log('Opening GIft');
       await giftsService.openGift(giftId)
-      this.drawGiftCards()
+      this.getGifts()
       Pop.success('Opening your present!')
     } catch (error) {
       Pop.error(error)

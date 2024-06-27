@@ -9,7 +9,7 @@ class GiftsService {
   }
 
   async openGift(giftId) {
-    await api.put(`api/gifts/${giftId}`, { open: true })
+    await api.put(`api/gifts/${giftId}`, { opened: true })
   }
 
   async getGifts() {
@@ -20,7 +20,6 @@ class GiftsService {
     AppState.gifts = gifts
     console.log(gifts);
   }
-
 
 
 }
